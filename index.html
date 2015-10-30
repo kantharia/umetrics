@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analytics</title>
+  <script src="js/Promise.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/loadingoverlay.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+  <style type="text/css">
+    .highcharts-container{
+      border: 1px solid #CCC;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .highcharts-button > rect {
+      stroke: #D0E4E9;
+      stroke-width: 10;
+      fill: #D0E4E9;
+    }
+
+    .highcharts-button > path {
+      stroke: #209797
+    }
+
+    .highcharts-button > text {
+      color: #F7F3F3;
+      fill: #F7F3F3;
+    }
+
+    #status {
+      background: #CCC;
+    }
+
+    #header {
+      min-width: 310px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Arial'
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h2>User Metrics</h2>
+  </div>
+  <div id="container-sdk" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  <div id="container-xamarin" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  <div id="container-javascript" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  <div id="container-browser" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  <script type="text/javascript" src="user-metrics.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
